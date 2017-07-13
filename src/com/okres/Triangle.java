@@ -5,36 +5,38 @@ package com.okres;
  */
 public class Triangle {
 
-    private String type;
-
-    private Integer height;
-
-    public Triangle(String type) {
-        this.type = type;
-    }
-
-    public Triangle(String type, Integer height) {
-        this.type = type;
-        this.height = height;
-    }
-
-    public Triangle(int height) {
-        this.height = height;
-    }
+    private Point pointA;
+    private Point pointB;
+    private Point pointC;
 
     public void draw(){
-        System.out.println(getType() + " Triangle drow " + getHeight());
+        System.out.println(" x = " + getPointA().getX() + " y = " + getPointA().getY());;
+        System.out.println(" x = " + getPointB().getX() + " y = " + getPointB().getY());;
+        System.out.println(" x = " + getPointC().getX() + " y = " + getPointC().getY());;
+
     }
 
-    public String getType() {
-        return type;
+    public Point getPointA() {
+        return pointA;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setPointA(Point pointA) {
+        this.pointA = pointA;
     }
 
-    public Integer getHeight() {
-        return height;
+    public Point getPointB() {
+        return pointB;
+    }
+
+    public void setPointB(Point pointB) {
+        this.pointB = pointB;
+    }
+
+    public Point getPointC() {
+        return pointC;
+    }
+
+    public void setPointC(Point pointC) {
+        this.pointC = pointC;
     }
 }
