@@ -4,6 +4,6 @@
 
 <beans>
     <bean id="triangle" class="com.okres.Triangle">
-        <property name="type" value="Equilateral"/>
+        <constructor-arg value="Equilateral"/>
     </bean>
 </beans>
