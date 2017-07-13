@@ -7,12 +7,23 @@ public class Triangle {
 
     private String type;
 
+    private Integer height;
+
     public Triangle(String type) {
         this.type = type;
     }
 
+    public Triangle(String type, Integer height) {
+        this.type = type;
+        this.height = height;
+    }
+
+    public Triangle(int height) {
+        this.height = height;
+    }
+
     public void draw(){
-        System.out.println(getType() + " Triangle drow");
+        System.out.println(getType() + " Triangle drow " + getHeight());
     }
 
     public String getType() {
@@ -21,5 +32,9 @@ public class Triangle {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Integer getHeight() {
+        return height;
     }
 }
